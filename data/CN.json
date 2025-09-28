@@ -1,0 +1,19 @@
+{
+  "name": "CN",
+  "siteCode": "cn",
+  "baseUrl": "https://www.samsung.com.cn",
+  "currencyMark": "¥",
+  "currencyCode": "CNY",
+  "BC_Phone": {
+    "device": "Galaxy S25 Edge",
+    "color": "Titanium Silver",
+    "storage": "512GB | 12GBB",
+    "sku": "SM-S9370ZSGCHC"
+  },
+  "PD_IM1": {
+    "Url": "https://www.samsung.com.cn/smartphones/galaxy-a/galaxy-a56-5g-awesome-graphite-256gb-sm-a5660zkcchc/buy/",
+    "SKU": "SM-A5660ZKCCHCY",
+    "DeviceName": "Galaxy A56 5G",
+    "Color": "awesome graphite"
+  }
+}

@@ -1,0 +1,97 @@
+{
+    "name": "DE",
+    "siteCode": "de",
+    "currencyMark": "€",
+    "currencyCode": "EUR",
+    "BC_Phone": {
+        "device": "Galaxy Z Fold7",
+        "color": "Jetblack",
+        "storage": "512GB",
+        "sku": "SM-F966BZKCEUB"
+    },
+    "BC_Tablet": {
+        "device": "Galaxy Tab S10 Ultra",
+        "color": "Moonstone Gray",
+        "storage": "256GB",
+        "connectivity": "Wi-Fi",
+        "sku": "SM-X920NZAREUB"
+    },
+    "BC_Watch": {
+        "device": "Galaxy Watch8",
+        "caseColor": "Silver",
+        "caseSize": "44mm",
+        "connectivity": "Bluetooth",
+        "sku": "SM-L320NZSADBT"
+    },
+    "BC_Book": {
+        "device": "Galaxy Book5 Pro",
+        "os": "Windows 11 Home",
+        "color": "Gray",
+        "bookMemory": "16GB",
+        "bookStorage": "512GB",
+        "connectivity": "WiFi",
+        "screen": "16",
+        "processor": "Intel® Core™ Ultra 7processor 256V",
+        "graphics": "Intel® Arc™ 140V GPU (8GB)",
+        "sku": "NP960XHA-KG1DE"
+    },
+    "PD_Bespoke": {
+        "Url": "https://www.samsung.com/de/refrigerators/bottom-mount-freezer/bespoke-bmfreezer-with-smartthings-ai-energy-mode-387l-black-rb38c7b5ab1-ef/",
+        "SKU": "RB38C7B5AB1/EF"
+    },
+    "PD_DM_Delivery": {
+        "Url": "",
+        "SKU": ""
+    },
+    "PD_DM_Pickup": {
+        "Url": "",
+        "SKU": ""
+    },
+    "PD_DM_PickupRecycling": {
+        "Url": "",
+        "SKU": ""
+    },
+    "PD_HA1": {
+        "Url": "https://www.samsung.com/de/refrigerators/bottom-mount-freezer/rb7300-bottom-mount-freezer-with-spacemax---wifi-387l-silver-rl38c776asr-eg/",
+        "SKU": "RB53DG706BB1EF"
+    },
+    "PD_HA2": {
+        "Url": "https://www.samsung.com/de/washers-and-dryers/washing-machines/ww5000c-front-loading-eco-bubble-smartthings-ai-energy-mode-less-microfiber-cycle-9kg-white-ww9ecgc04aaeeg/",
+        "SKU": "WW9ECGC04AAEEG"
+    },
+    "PD_IM1": {
+        "Url": "https://www.samsung.com/de/smartphones/galaxy-a/galaxy-a26-5g-black-128gb-sm-a266bzkbeub/buy/",
+        "SKU": "SM-A266BZKBEUB",
+        "DeviceName": "Galaxy A26 5G",
+        "Color": "Black",
+        "Storage": "128 gb"
+    },
+    "PD_IT1": {
+        "Url": "https://www.samsung.com/de/monitors/gaming/odyssey-oled-g8-g85sd-34-inch-oled-ultra-wqhd-ls34dg850suxen/",
+        "SKU": "LS34DG850SUXEN"
+    },
+    "PD_IT2": {
+        "Url": "https://www.samsung.com/de/monitors/gaming/odyssey-3d-g90xf-27-inch-165hz-uhd-ls27fg904xuxen/",
+        "SKU": "LS27FG904XUXEN"
+    },
+    "PD_VD1": {
+        "Url": "https://www.samsung.com/de/tvs/qled-tv/q60d-85-inch-qled-4k-tizen-os-smart-tv-gq85q60dauxzg/?qledtv",
+        "SKU": "GQ85Q60DAUXZG"
+    },
+    "PD_VD2": {
+        "Url": "https://www.samsung.com/de/tvs/qled-tv/qn800d-65-inch-neo-qled-8k-tizen-os-smart-tv-gq65qn800dtxzg/",
+        "SKU": "GQ65QN800DTXZG"
+    },
+    "PD_With_tradeUp": {
+        "Url": "",
+        "SKU": ""
+    },
+    "RewardSummary": {
+        "tieringMessage": "Registriere dich oder melde dich an, um Samsung Rewards-Punkte auf deine Bestellung zu erhalten",
+        "rewardsbenefit": "Sammle Rewards Punkte mit dieser Bestellung (Nur für Teilnehmer des Samsung Rewards Programmes)",
+        "EstimatedRewardsPoints": "Sammle ([\\d\\.,]+) Rewards Punkte mit dieser Bestellung \\(Nur für Teilnehmer des Samsung Rewards Programmes\\)",
+        "EnrollRewards": "Trete Samsung Rewards bei und sammle Punkte mit jeder Bestellung"
+    },
+    "TradeUpData": {},
+    "DeliveryCalendar": "Aufstell-Service"
+}

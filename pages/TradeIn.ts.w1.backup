@@ -1,0 +1,337 @@
+import { type Page, type Locator, expect } from '@playwright/test';
+
+
+export class TradeInPopup {
+
+  // Option Select Box selector function
+  private readonly deviceOptionSelectBox = (value: string): Locator => {
+    const selectors = [
+      `.trade-in-select ul#deviceType:has(a[value="${value}" i])`,
+      `.trade-in-select:has(a[value="${value}" i])`,
+      `.trade-in-select:has(a[data-name="${value}" i])`
+    ];
+    return this.page.locator(selectors.join(', '));
+  };
+  
+  // Device Option Selector function
+  private readonly deviceOptionSelector = (value: string): Locator => {
+    const selectors = [
+      `.trade-in-select ul#deviceType a[value="${value}" i]`,
+      `.trade-in-select a[value="${value}" i]`,
+      `.trade-in-select a[data-name="${value}" i]`,
+      `.trade-in-radio__input.js-category[id="${value}" i]`
+    ];
+    return this.page.locator(selectors.join(', '));
+  };
+
+  private readonly deviceCategorySelector = (value: string): Locator => {
+    const selectors = [
+      // `.trade-in-popup__category-device-list:has(input[value="${value}" i])`,      
+      // `.trade-in-popup-v3__tradeIn-category-list:has(input[value="${value}" i])`,
+      `.trade-in-popup-v3__tradeIn-category-list input[value="${value}" i]`,
+      `.trade-in-popup__category-device-list input[value="${value}" i]`, 
+    ];
+    return this.page.locator(selectors.join(', '));
+  };
+
+  // Button Locators
+  private readonly btnContinue: Locator;
+  private readonly btnApply: Locator;
+  
+  // Input Elements
+  private readonly inputImei: Locator;
+  
+  // Row and Option Locators
+  private readonly conditionRow: Locator;
+  private readonly conditionOption: Locator;
+  
+  // Terms & Conditions Locator
+  private readonly tncCheckbox: Locator;
+
+  constructor(public readonly page: Page) {
+    // Button Locators
+    this.btnContinue = this.page.locator('.trade-in-popup-v3__btn-wrap button[an-la*="next"i]');
+    
+    this.btnApply = this.page.locator([
+      '[an-la*="apply trade in"]'
+      // '[data-an-la="trade-in:apply discount:add to cart"]',
+      // '[data-an-la="trade-in:select device:apply discount"]',
+      // '[an-la="trade-in:apply discount:apply trade in"]',    
+      // '[data-an-la="trade-in:device1:apply discount:add to cart"]',
+      // '.bc-trade-in-popup__btn-apply',
+      // '.bc-exchange-popup__btn-continue[aria-disabled="true"][an-la*="confirm"]'
+    ].join(', '));
+    
+    // Input Elements
+    this.inputImei = this.page.locator([
+      'input#common-trade-imei',
+      '[name="tradeIn.IMEI_FORM"] input',
+      '.trade-in-summary__imei-input input',
+      '.trade-in-popup__imei-form input[id="trade-imei"]',
+      '.bc-exchange-popup__imei-form .text-field-v2__input#text-field-3'
+    ].join(', '));
+    
+    // Row and Option Locators
+    this.conditionRow = this.page.locator([
+      '.trade-in-popup-v3__summary-accept-list',
+      '.trade-in-popup-v3__condition-list-item',
+      '.trade-in-popup__summary-accept-list',
+      '.trade-in-popup__condition-list-item',
+      '.question-wrapper',
+      '.condition-radio',
+      '.assessment-question-container',
+      '.trade-in-question-button-container',
+      '.bc-trade-in-popup__condition-list-item'
+    ].join(', '));
+    
+    this.conditionOption = this.page.locator([
+      '.radio-v2__label'
+      // 필요시 다른 선택자들도 주석 해제하여 추가 가능
+      // '.mat-mdc-radio-touch-target',
+      // '.condition-radio__button.condition-radio__yes',
+      // '.mdc-checkbox__native-control',
+      // '.checkbox-v2__label-box-wrap',
+      // '.trade-in-popup-v3__condition-list-item-check',
+      // '.trade-in-popup__condition-list-item-check',
+      // '.trade-in-popup__condition-list-item-check-label',
+      // '.opt-button',
+      // '[name="question"] label',
+      // '.trade-in-question-button'
+    ].join(', '));
+    
+    // Terms & Conditions Locator
+    this.tncCheckbox = this.page.locator('.trade-in-popup-v3__terms input[required]:not(:checked) + label svg');
+  }
+
+
+
+     async process(data: any) {
+     console.log("🚀 [Process] Starting Trade-in process...");
+     
+      try {
+        await this.skipGuide();
+
+        await this.selectDeviceOptions(data);
+        await this.clickButton(this.btnContinue, 'Continue');
+        
+        if (await this.selectBestDeviceConditions()) {
+          await this.acceptTermsAndConditions();
+          await this.page.waitForTimeout(2000);
+        }
+   
+        await this.clickButton(this.btnContinue, 'Continue');
+        await this.enterIMEI(data);
+        await this.acceptTermsAndConditions();
+        await this.page.waitForTimeout(5000);
+        await this.clickButton(this.btnApply, 'Apply');
+
+       console.log("🎉 [Process] Trade-in process completed successfully!");
+     } catch (error) {
+       console.error("❌ [Process] Trade-in process failed:", error);
+       throw new Error(`Trade-in process failed: ${error instanceof Error ? error.message : String(error)}`);
+     }
+   }
+
+  
+  async selectDeviceOptions(data: any) {
+    // Version 2: Direct calls for category, loop-based for other options
+    const allowedSelectKeys = ['zipCode', 'brand', 'model', 'series', 'subseries', 'device', 'storage', 'color', 'purchaseFrom'];
+    
+    // Process category option (radio button) - direct call since there's only one
+    if (data.category && data.category.trim()) {
+      await this.selectCategory(data.category);
+    }
+    
+    // Process select options (dropdown/select boxes) - only existing keys with values
+    for (const key of allowedSelectKeys) {
+      if (data[key] && data[key].trim()) {
+        await this.selectOption(data[key]);
+      }
+    }
+  }
+
+
+
+  async selectCategory(value: string) {
+  const categoryLocator = this.deviceCategorySelector(value);
+  
+  try {
+    await categoryLocator.waitFor({ state: 'visible', timeout: 3000});
+    
+    // Check if already selected
+    const isChecked = await categoryLocator.isChecked();
+    if (isChecked) {
+      return;
+    }
+    
+    // Direct click for radio button
+    await categoryLocator.click();
+  } catch (error) {
+    console.error(`❌ [Category] Failed to select "${value}":`, error);
+    throw new Error(`Category selection failed for "${value}": ${error instanceof Error ? error.message : String(error)}`);
+  }
+}
+
+
+  async selectOption(value: string) {
+  const boxLocator = this.deviceOptionSelectBox(value);
+  const conditionOption = this.deviceOptionSelector(value);
+  
+  try {
+    await boxLocator.waitFor({ state: 'visible', timeout: 3000 });
+    
+    const boxClass = await boxLocator.getAttribute('class');
+    if (boxClass && boxClass.includes('is-selected')) {
+      return;
+    }
+    
+    // Check if box is opened
+    if (!boxClass || !boxClass.includes('is-opened')) {
+      await boxLocator.click();
+    }
+    
+    await conditionOption.waitFor({ state: 'visible', timeout: 3000 });
+    await conditionOption.click();
+  } catch (error) {
+    console.error(`❌ [Option] Failed to select "${value}":`, error);
+    throw new Error(`Option selection failed for "${value}": ${error instanceof Error ? error.message : String(error)}`);
+  }
+}
+
+
+  private async clickFirstOption(row: Locator, maxRetries = 3): Promise<boolean> {
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        const firstOption = row.locator(this.conditionOption).first();
+        await firstOption.scrollIntoViewIfNeeded();
+        await firstOption.click();
+        return true;
+      } catch (error) {
+        if (attempt < maxRetries) {
+          await this.page.waitForTimeout(200 * attempt);
+        }
+      }
+    }
+    return false;
+  }
+
+  async selectBestDeviceConditions(timeoutMs = 30_000): Promise<boolean> {
+    const deadline = Date.now() + timeoutMs;
+    let clicked = 0;
+
+    while (Date.now() < deadline) {
+      const uncheckedRows = this.conditionRow.filter({
+        hasNot: this.page.locator("input:checked")
+      });
+      const visibleRowCount = await uncheckedRows.filter({ visible: true }).count();
+
+      if (visibleRowCount === 0) break;
+
+      const success = await this.clickFirstOption(uncheckedRows.first());
+      if (success) {
+        clicked++;
+      } else {
+        break;
+      }
+
+      await this.page.waitForTimeout(300);
+    }
+
+    return clicked > 0;
+  }
+
+/**
+ * Accept all Terms and Conditions in the Trade-in pop-up.
+ * Clicks every unchecked T&C checkbox until none remain.
+ */
+ async acceptTermsAndConditions(timeoutMs: number = 30_000): Promise<boolean> {
+   const deadline = Date.now() + timeoutMs;
+   let clicked = 0;
+
+   while (Date.now() < deadline) {
+     const unchecked = this.tncCheckbox;
+     const visibleCount = await unchecked.filter({ visible: true }).count();
+     
+     if (visibleCount === 0) {
+       break;
+     }
+
+     try {
+       const firstCheckbox = unchecked.first();
+       await firstCheckbox.click({ force: true });
+       clicked++;
+       
+       await this.page.waitForTimeout(100);
+     } catch (error) {
+       console.error(`❌ [T&C] Failed to click T&C checkbox:`, error);
+       break;
+     }
+   }
+
+   return clicked > 0;
+ }
+
+ async enterIMEI(data: any): Promise<void> {
+   if (!data.IMEI || !(await this.inputImei.isVisible({ timeout: 5000 }))) {
+     return;
+   }   
+   try {
+     await this.inputImei.fill(data.IMEI);
+     await this.inputImei.press('Enter');
+   } catch (error) {
+     console.error(`❌ [IMEI] Failed to process IMEI "${data.IMEI}":`, error);
+     throw new Error(`IMEI processing failed for "${data.IMEI}": ${error instanceof Error ? error.message : String(error)}`);
+   }
+ }
+  
+
+   // Navigation Methods
+  /**
+   * CSS 선택자 또는 Locator를 받아서 해당 버튼을 클릭하는 통합 메서드
+   * @param selector CSS 선택자 또는 Locator
+   * @param buttonType 버튼 타입 (로그용)
+   */
+     async clickButton(selector: string | Locator, buttonType: string = 'Button'): Promise<void> {
+     const buttons = typeof selector === 'string' ? this.page.locator(selector) : selector;
+     const count = await buttons.count();
+     
+     if (count === 0) {
+       throw new Error(`[${buttonType}] No ${buttonType} button candidates found`);
+     }
+     
+     // 첫 번째로 보이고 활성화된 버튼 찾기
+     for (let i = 0; i < count; i++) {
+       const button = buttons.nth(i);
+       
+       try {
+         const [isVisible, isEnabled] = await Promise.all([
+           button.isVisible({ timeout: 1000 }),
+           button.isEnabled()
+         ]);
+         
+         if (isVisible && isEnabled) {
+           await button.scrollIntoViewIfNeeded();
+           await button.click();
+           return;
+         }
+       } catch (error) {
+         console.error(`❌ [${buttonType}] Button ${i + 1} check failed:`, error);
+       }
+     }
+     
+     throw new Error(`[${buttonType}] No visible and enabled ${buttonType} button found after checking all candidates`);
+   }
+
+
+     async skipGuide(): Promise<void> {
+    try {
+    await this.clickButton(this.btnContinue, 'Continue');
+      
+    } catch (error) {
+      console.log('⏭️ [TradeIn] Guide step failed, continuing...');
+    }
+  }
+  
+  
+
+}

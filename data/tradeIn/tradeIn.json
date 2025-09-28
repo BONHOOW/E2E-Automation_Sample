@@ -1,0 +1,865 @@
+{
+  "structureSample": {
+    "type": "phone|watch",
+    "site": "AE|AT|AU|BE|...",
+    "zipCode": "12345|15111|783388|...",
+    "IMEI": "338219767899429|353301461806494|...",
+    "category": "Mobile Phone|Handys|Phone|Smartphones|...",
+    "brand": "Samsung|Apple|APPLE|三星|...",
+    "device": "Z Fold 4 (5G)|Galaxy S23 Ultra|...",
+    "model": "Z Series|Galaxy Z Fold 4|...",
+    "storage": "1 TB|256GB|512GB|...",
+    "color": "Black|Azul cielo|任何顏色|...",
+    "series": "Galaxy Z系列|Flip Series|...",
+    "subseries": "Fold Series|...",
+    "screanSize": "44|...",
+    "purchaseFrom": "0|..."
+  },
+  "sample": {
+    "type": "phone",
+    "category": "Mobile Phone",
+    "brand": "Samsung",
+    "device": "Z Fold 4 (5G)",
+    "model": "Z Series",
+    "storage": "1 TB",
+    "subseries": "Fold Series"
+  },
+  "metadata": {
+    "totalRows": 97,
+    "generatedAt": "2025-08-11T07:03:39.971Z",
+    "sourceFile": "./data/tradeIn/TradeIn.xlsx"
+  },
+  "tradeInData": {
+    "AE": [
+      {
+        "type": "phone",
+        "category": "Mobile Phone",
+        "brand": "Samsung",
+        "device": "Z Fold 4 (5G)",
+        "model": "Z Series",
+        "storage": "1 TB",
+        "subseries": "Fold Series"
+      }
+    ],
+    "AT": [
+      {
+        "type": "phone",
+        "IMEI": "338219767899429 ",
+        "category": "Handys",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy S23 Ultra 5G 256GB S918B DS"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smartwatches",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch5 Pro 4G R925"
+      }
+    ],
+    "AU": [
+      {
+        "type": "phone",
+        "category": "Phone",
+        "brand": "Samsung",
+        "model": "Galaxy Z Fold 4",
+        "storage": "512"
+      },
+      {
+        "type": "watch",
+        "category": "WATCH",
+        "brand": "Samsung",
+        "model": "Galaxy Watch 5 Bluetooth",
+        "screanSize": "44"
+      }
+    ],
+    "BE": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "Smartphones",
+        "brand": "Samsung",
+        "device": "Galaxy Z Fold4",
+        "storage": "256GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Watches",
+        "brand": "Samsung",
+        "device": "Galaxy Watch5 Pro LTE 45mm"
+      }
+    ],
+    "BE_FR": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "Smartphones",
+        "brand": "Samsung",
+        "device": "Galaxy Z Fold4",
+        "storage": "256GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Montres",
+        "brand": "Samsung",
+        "device": "Galaxy Watch5 Pro LTE 45mm"
+      }
+    ],
+    "BG": [
+      {
+        "type": "phone",
+        "IMEI": "359978128084906 ",
+        "category": "Phone",
+        "brand": "Apple",
+        "device": "Apple iPhone 13 Pro Max"
+      }
+    ],
+    "CA": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "Phone",
+        "brand": "Samsung",
+        "device": "GALAXY Z FOLD 4 5G",
+        "storage": "512GB",
+        "color": "Black"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smart Watch",
+        "brand": "Samsung",
+        "device": "GALAXY WATCH5 PRO 45",
+        "storage": "16GB",
+        "color": "Black"
+      }
+    ],
+    "CA_FR": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "Phone",
+        "brand": "Samsung",
+        "device": "GALAXY Z FOLD 4 5G",
+        "storage": "512GB",
+        "color": "Black"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smart Watch",
+        "brand": "Samsung",
+        "device": "GALAXY WATCH5 PRO 45",
+        "storage": "16GB",
+        "color": "Black"
+      }
+    ],
+    "CH": [
+      {
+        "type": "phone",
+        "IMEI": "355086754092336 ",
+        "category": "Mobile Phone",
+        "brand": "APPLE",
+        "device": " ",
+        "model": "Apple iPhone 13",
+        "storage": "256GB"
+      }
+    ],
+    "CH_FR": [
+      {
+        "type": "phone",
+        "IMEI": "355086754092336 ",
+        "category": "Mobile Phone",
+        "brand": "APPLE",
+        "model": "Apple iPhone 13",
+        "storage": "256GB"
+      }
+    ],
+    "CL": [
+      {
+        "type": "phone",
+        "IMEI": "301296444933956 ",
+        "category": "SMARTPHONE",
+        "brand": "Samsung",
+        "device": "Galaxy S22 Ultra",
+        "storage": "512 GB"
+      }
+    ],
+    "CN": [
+      {
+        "type": "phone",
+        "IMEI": "350730921430722 ",
+        "category": "手机",
+        "brand": "三星",
+        "device": "三星 Galaxy Z Fold4 (5G)",
+        "series": "Galaxy Z系列"
+      },
+      {
+        "type": "watch",
+        "category": "智能手表",
+        "brand": "三星手表",
+        "device": "三星 Galaxy Watch5",
+        "series": "其他"
+      }
+    ],
+    "CO": [
+      {
+        "type": "phone",
+        "IMEI": "445387661033021 ",
+        "category": "SMARTPHONE",
+        "brand": "Samsung",
+        "device": "Galaxy Z Fold 4",
+        "storage": "512GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "445387661033021 ",
+        "category": "Smartwatches",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch4 Classic 46mm BT R890N"
+      }
+    ],
+    "CZ": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "Mobiles",
+        "brand": "samsung",
+        "device": "Samsung Galaxy Z Fold4 5G 1TB F936B"
+      }
+    ],
+    "DE": [
+      {
+        "type": "phone",
+        "IMEI": "301296444933956 ",
+        "category": "SMARTPHONE",
+        "brand": "Samsung",
+        "device": "Galaxy S22 Ultra 5G",
+        "storage": "512 GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "SMARTWATCH",
+        "brand": "Samsung",
+        "device": "Galaxy Watch6 44mm LTE"
+      }
+    ],
+    "DK": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "Mobiles",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Z Fold4 5G 256GB F936B"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smartwatches",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch5 Pro 4G R925"
+      }
+    ],
+    "EE": [
+      {
+        "type": "phone",
+        "IMEI": "354741669978968 ",
+        "category": "Mobiilid",
+        "brand": "Apple",
+        "device": "Apple iPhone 12 Pro Max 256GB"
+      }
+    ],
+    "ES": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "Smartphone",
+        "brand": "SAMSUNG",
+        "device": "Samsung Galaxy Z Fold4",
+        "storage": "256GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "HM2J419JQ07I",
+        "category": "Smartwatch",
+        "brand": "APPLE",
+        "device": "Apple Watch 6 - 44mm GPS + Cellular",
+        "storage": "-GB"
+      }
+    ],
+    "FI": [
+      {
+        "type": "phone",
+        "IMEI": "354741669978968 ",
+        "category": "Mobiles",
+        "brand": "Apple",
+        "device": "Apple iPhone 12 Pro Max 256GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smartwatches",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch5 Pro 4G R925"
+      }
+    ],
+    "FR": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "SMARTPHONE",
+        "brand": "Samsung",
+        "device": "Galaxy Z Fold4",
+        "storage": "256Go"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "MONTRE CONNECTEE",
+        "brand": "Samsung",
+        "device": "Galaxy Watch5 Pro 45mm Bluetooth"
+      }
+    ],
+    "HK": [
+      {
+        "type": "phone",
+        "IMEI": "354495640217760 ",
+        "category": "智能手機及平板電腦",
+        "brand": "APPLE",
+        "device": "APPLE iPhone 14 Pro Max",
+        "storage": "512GB",
+        "color": "任何顏色",
+        "purchaseFrom": "0"
+      }
+    ],
+    "HK_EN": [
+      {
+        "type": "phone",
+        "IMEI": "354495640217760 ",
+        "category": "Smartphone & Tablet",
+        "brand": "APPLE",
+        "device": "APPLE iPhone 14 Pro Max",
+        "storage": "512GB",
+        "color": "Any color",
+        "purchaseFrom": "0"
+      }
+    ],
+    "HR": [
+      {
+        "type": "phone",
+        "IMEI": "359978128084906 ",
+        "category": "Mobiteli",
+        "brand": "Apple",
+        "device": "Apple iPhone 13 Pro Max 256GB"
+      }
+    ],
+    "HU": [
+      {
+        "type": "phone",
+        "IMEI": "358975993711879 ",
+        "category": "Mobiles",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Z Flip4 5G 256GB F721B"
+      }
+    ],
+    "ID": [
+      {
+        "type": "phone",
+        "zipCode": "15111",
+        "IMEI": "354495640217760 ",
+        "category": "smartphone",
+        "brand": "Samsung",
+        "device": "Galaxy A55",
+        "storage": "128GB"
+      }
+    ],
+    "IN": [
+      {
+        "type": "phone",
+        "zipCode": "783388",
+        "IMEI": "354495640217760 ",
+        "category": "memory-rdo0",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy S20 FE",
+        "storage": "256 GB"
+      }
+    ],
+    "IT": [
+      {
+        "type": "phone",
+        "IMEI": "917975089020437 ",
+        "category": "Smartphone",
+        "brand": "Apple",
+        "device": "iPhone 15 128GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "HM2J419JQ07I",
+        "category": "Smartwatch",
+        "brand": "APPLE",
+        "device": "Watch Series 6 40mm GPS Titanium Case"
+      }
+    ],
+    "JP": [
+      {
+        "type": "phone",
+        "IMEI": "351798061557587 ",
+        "category": "スマートフォン",
+        "brand": "SAMSUNG",
+        "device": "Galaxy Z Fold4",
+        "storage": "ストレージ不問/なし"
+      }
+    ],
+    "LT": [
+      {
+        "type": "phone",
+        "IMEI": "354741669978968 ",
+        "category": "Mobilieji telefonai",
+        "brand": "Apple",
+        "device": "Apple iPhone 12 Pro Max 256GB"
+      }
+    ],
+    "LV": [
+      {
+        "type": "phone",
+        "IMEI": "354741669978968 ",
+        "category": "Mobilie tālruņi",
+        "brand": "Apple",
+        "device": "Apple iPhone 12 Pro Max 256GB"
+      }
+    ],
+    "MX": [
+      {
+        "type": "phone",
+        "IMEI": "539601673160771 ",
+        "category": "Phone",
+        "brand": "Samsung",
+        "device": "Galaxy S23 Ultra 5G",
+        "storage": "512GB",
+        "color": "Azul cielo"
+      }
+    ],
+    "MY": [
+      {
+        "type": "phone",
+        "zipCode": "50000",
+        "IMEI": "351787742847020 ",
+        "category": "smartphone",
+        "brand": "Samsung",
+        "device": "Galaxy Z Fold4",
+        "storage": "12GB / 256GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "watch",
+        "brand": "Samsung",
+        "device": "Galaxy Watch6 Classic 47mm Cellular",
+        "storage": "2GB / 16GB"
+      }
+    ],
+    "NL": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "smartphones",
+        "brand": "Samsung",
+        "device": "Galaxy Z Fold4",
+        "storage": "256GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Watches",
+        "brand": "Samsung",
+        "device": "Galaxy Watch5 Pro 45mm"
+      }
+    ],
+    "NO": [
+      {
+        "type": "phone",
+        "IMEI": "917975089020437 ",
+        "category": "Mobiles",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy S9 64GB G960F"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smartwatches",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch5 Pro 4G R925"
+      }
+    ],
+    "NZ": [
+      {
+        "type": "phone",
+        "IMEI": "356223184404505 ",
+        "category": "Phone",
+        "brand": "Samsung",
+        "device": "GALAXY Z FOLD 5 5G",
+        "storage": "256GB"
+      }
+    ],
+    "PE": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "SMARTPHONE",
+        "brand": "Samsung",
+        "device": "GALAXY Z FOLD 4",
+        "storage": "512GB"
+      }
+    ],
+    "PH": [
+      {
+        "type": "phone",
+        "zipCode": "1400",
+        "IMEI": "355086754092336 ",
+        "category": "Smartphone",
+        "brand": "Apple",
+        "device": "iPhone 14 Pro Max 5G",
+        "storage": "1TB"
+      }
+    ],
+    "PL": [
+      {
+        "type": "phone",
+        "IMEI": "917975089020437 ",
+        "category": "Telefony Komórkowe",
+        "brand": "Apple",
+        "device": "Apple iPhone 15 128GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Inteligentne zegarki",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch5 Pro 4G R925"
+      }
+    ],
+    "PT": [
+      {
+        "type": "phone",
+        "IMEI": "338219767899429 ",
+        "category": "Smartphone",
+        "brand": "SAMSUNG",
+        "device": "Samsung Galaxy S23 Ultra",
+        "model": " ",
+        "storage": "1TB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smartwatch",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch6 Classic (LTE, 47mm)",
+        "storage": "-GB"
+      }
+    ],
+    "RO": [
+      {
+        "type": "phone",
+        "IMEI": "351704551369632 ",
+        "category": "Phone",
+        "brand": "Apple",
+        "device": "Apple iPhone 12 Pro Max 128GB"
+      }
+    ],
+    "SA": [
+      {
+        "type": "phone",
+        "category": "Mobile Phone",
+        "brand": "Samsung",
+        "device": "Z Flip 4 (5G)",
+        "model": "Z Series",
+        "storage": "256 GB",
+        "series": "Flip Series"
+      }
+    ],
+    "SA_EN": [
+      {
+        "type": "phone",
+        "category": "Mobile Phone",
+        "brand": "Samsung",
+        "device": "Z Flip 4 (5G)",
+        "model": "Z Series",
+        "storage": "256 GB",
+        "series": "Flip Series"
+      }
+    ],
+    "SE": [
+      {
+        "type": "phone",
+        "IMEI": "351704551369632 ",
+        "category": "mobiles",
+        "brand": "Apple",
+        "device": "Apple iPhone 12 Pro Max 128GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smartwatches",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch5 44mm WiFi R910"
+      }
+    ],
+    "SG": [
+      {
+        "type": "phone",
+        "IMEI": "356728111384612 ",
+        "category": "Smartphone",
+        "brand": "Apple",
+        "device": "iPhone 12 Pro Max",
+        "storage": "6GB / 128GB"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "watch",
+        "brand": "Samsung",
+        "device": "Galaxy Watch5 Pro 45mm Cellular",
+        "storage": "1.5GB / 16GB"
+      }
+    ],
+    "SI": [
+      {
+        "type": "phone",
+        "IMEI": "359978128084906 ",
+        "category": "Mobilni telefoni",
+        "brand": "Apple",
+        "device": "Apple iPhone 13 Pro Max 256GB"
+      }
+    ],
+    "SK": [
+      {
+        "type": "phone",
+        "IMEI": "351787742847020 ",
+        "category": "Mobiles",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Z Fold4 5G 1TB F936B"
+      },
+      {
+        "type": "watch",
+        "IMEI": "353301461806494 ",
+        "category": "Smartwatches",
+        "brand": "Samsung",
+        "device": "Samsung Galaxy Watch7 44mm LTE L315"
+      }
+    ],
+    "TH": [
+      {
+        "type": "phone",
+        "IMEI": "524644035655028 ",
+        "category": "SMARTPHONE",
+        "brand": "Samsung",
+        "device": "S23 Ultra",
+        "storage": "256GB"
+      }
+    ],
+    "TR": [
+      {
+        "type": "phone",
+        "IMEI": "109243004159964 ",
+        "category": "Akıllı telefon",
+        "brand": "Apple",
+        "device": "iPhone 11"
+      }
+    ],
+    "TW": [
+      {
+        "type": "phone",
+        "IMEI": "983240737522204 ",
+        "category": "手機",
+        "brand": "SAMSUNG",
+        "device": "Galaxy Z Flip4 (256GB，SM-F7210)"
+      }
+    ],
+    "UK": [
+      {
+        "type": "phone",
+        "IMEI": "358709981793403",
+        "category": "Mobile Phone",
+        "brand": "Samsung",
+        "device": "Galaxy S23 5G - S911B",
+        "storage": "256GB"
+      },
+      {
+        "type": "watch",
+        "category": "Smart Watch",
+        "brand": "Samsung",
+        "device": "Any Galaxy Watch 7",
+        "storage": "Any GB"
+      },
+      {
+        "type": "tablet",
+        "category": "tablet",
+        "brand": "Samsung",
+        "device": "Any Tab S9",
+        "storage": "Any GB"
+      }
+    ],
+    "ZA_EN": [
+      {
+        "type": "phone",
+        "zipCode": "1845994"
+      }
+    ],
+    "VN": [
+      {
+        "type": "phone",
+        "IMEI": "356223189128745 ",
+        "category": "Điện thoại thông minh",
+        "brand": "SAMSUNG",
+        "device": "Galaxy Z Fold5 12GB/1TB"
+      }
+    ],
+    "AE_AR": [
+      {
+        "type": "phone",
+        "category": "الهاتف الذكي",
+        "brand": "سامسونج",
+        "device": "Z فولد 4 (5G)",
+        "model": "سلسلة Z",
+        "storage": "1 تيرابايت",
+        "subseries": "فولد سلسلة"
+      }
+    ]
+  },
+  "statistics": {
+    "siteCount": {
+      "AE": 1,
+      "AT": 2,
+      "AU": 2,
+      "BE": 2,
+      "BE_FR": 2,
+      "BG": 1,
+      "CA": 2,
+      "CA_FR": 2,
+      "CH": 1,
+      "CH_FR": 1,
+      "CL": 1,
+      "CN": 2,
+      "CO": 2,
+      "CZ": 1,
+      "DE": 2,
+      "DK": 2,
+      "EE": 1,
+      "ES": 2,
+      "FI": 2,
+      "FR": 2,
+      "HK": 1,
+      "HK_EN": 1,
+      "HR": 1,
+      "HU": 1,
+      "ID": 1,
+      "IN": 1,
+      "IT": 2,
+      "JP": 1,
+      "LT": 1,
+      "LV": 1,
+      "MX": 1,
+      "MY": 2,
+      "NL": 2,
+      "NO": 2,
+      "NZ": 1,
+      "PE": 1,
+      "PH": 1,
+      "PL": 2,
+      "PT": 2,
+      "RO": 1,
+      "SA": 1,
+      "SA_EN": 1,
+      "SE": 2,
+      "SG": 2,
+      "SI": 1,
+      "SK": 2,
+      "TH": 1,
+      "TR": 1,
+      "TW": 1,
+      "UK": 2,
+      "ZA_EN": 1,
+      "VN": 1,
+      "AE_AR": 1,
+      "BH": 1,
+      "BH_AR": 1,
+      "EG": 1,
+      "GR": 1,
+      "IL": 1,
+      "IQ_AR": 1,
+      "IQ_KU": 1,
+      "KW": 1,
+      "KW_AR": 1,
+      "KZ_KZ": 1,
+      "KZ_RU": 1,
+      "Levant": 1,
+      "Levant_Ar": 1,
+      "N_africa": 1,
+      "OM": 1,
+      "OM_AR": 1,
+      "PK": 1,
+      "QA": 1,
+      "QA_AR": 1,
+      "RU": 1,
+      "UA": 1
+    },
+    "brandCount": {
+      "Samsung": 45,
+      "Apple": 15,
+      "APPLE": 6,
+      "三星": 1,
+      "samsung": 1,
+      "SAMSUNG": 5,
+      "Unknown": 22,
+      "سامسونج": 1,
+      "三星手表": 1
+    },
+    "categoryCount": {
+      "Mobile Phone": 6,
+      "Handys": 1,
+      "Phone": 7,
+      "Smartphones": 2,
+      "SMARTPHONE": 6,
+      "手机": 1,
+      "Mobiles": 6,
+      "Mobiilid": 1,
+      "Smartphone": 5,
+      "智能手機及平板電腦": 1,
+      "Smartphone & Tablet": 1,
+      "Mobiteli": 1,
+      "smartphone": 2,
+      "memory-rdo0": 1,
+      "スマートフォン": 1,
+      "Mobilieji telefonai": 1,
+      "Mobilie tālruņi": 1,
+      "smartphones": 1,
+      "Telefony Komórkowe": 1,
+      "mobiles": 1,
+      "Mobilni telefoni": 1,
+      "Akıllı telefon": 1,
+      "手機": 1,
+      "Unknown": 22,
+      "Điện thoại thông minh": 1,
+      "الهاتف الذكي": 1,
+      "Smartwatches": 7,
+      "WATCH": 1,
+      "Watches": 2,
+      "Montres": 1,
+      "Smart Watch": 3,
+      "智能手表": 1,
+      "SMARTWATCH": 1,
+      "Smartwatch": 3,
+      "MONTRE CONNECTEE": 1,
+      "watch": 2,
+      "Inteligentne zegarki": 1
+    },
+    "typeCount": {
+      "phone": 53,
+      "watch": 23,
+      "Unknown": 21
+    }
+  }
+}

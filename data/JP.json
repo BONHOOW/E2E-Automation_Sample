@@ -1,0 +1,16 @@
+{
+  "name": "JP",
+  "siteCode": "jp",
+  "BC_Phone": {
+    "device": "Galaxy Z Fold7",
+    "color": "ブルー シャドウ",
+    "storage": "256 GB｜12 GB",
+    "sku": "SM-F966QDBASJP"
+  },
+  "PD_IM1": {
+    "Url": "https://www.samsung.com/jp/audio-sound/galaxy-buds/galaxy-buds3-white-sm-r530nzwaxjp/",
+    "SKU": "SM-R530NZWAXJP",
+    "DeviceName": "Galaxy Buds3",
+    "Color": "pink white"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "uk": {
+    "CustomerInfo": {
+      "email": "autotestww@gmail.com",
+      "title": "Mr",
+      "firstName": "Auto",
+      "lastName": "test",
+      "phoneCode": "+44",
+      "phoneNumber": "3213213312",
+      "dateOfBirth": "01/04/1988"
+    },
+    "CustomerAddress": {
+      "country": "UK",
+      "postalCode": "KT16 0PS",
+      "line1": "Samsung Electronics, Samsung House",
+      "adminLevel2": "Chertsey"
+    },
+    "BillingAddress": {
+      "searchAddress": "BD24 0AA",
+      "line1": "1 Sandholme Drive",
+      "adminLevel2": "Settle",
+      "postalCode": "KT16 0PS"
+    }
+  },
+  "au": {
+    "CustomerInfo": {
+      "email": "autotestww@gmail.com",
+      "firstName": "Auto",
+      "lastName": "test",
+      "phoneNumber": "0412376678",
+      "dateOfBirth": "01/04/1988"
+    },
+    "CustomerAddress": {
+      "line1": "3 Murray Rose Ave",
+      "postalCode": "4000",
+      "adminLevel2": "Brisbane",
+      "adminLevel1": "Queensland"
+    },
+    "BillingAddress": {
+      "line1": "3 Murray Rose Ave",
+      "postalCode": "2000",
+      "adminLevel2": "BARANGAROO",
+      "adminLevel1": "New South Wales"
+      
+    }
+  },
+  "jp": {
+    "CustomerInfo": {
+      "email": "wwauto.jp@teml.net",
+      "firstName": "Auto",
+      "lastName": "test",
+      "phoneNumber": "7036789000",
+      "dateOfBirth": "01/04/1988"
+    },
+    "CustomerAddress": {
+      "postalCode": "1060047",
+      "line1": "南麻布",
+      "adminLevel3": "東京都",
+      "adminLevel5": "test",
+      "adminLevel2": "港区"
+    },
+    "BillingAddress": {
+      "postalCode": "1060047",
+      "line1": "南麻布",
+      "adminLevel3": "東京都",
+      "adminLevel5": "test",
+      "adminLevel2": "港区"
+    }
+  }
+}

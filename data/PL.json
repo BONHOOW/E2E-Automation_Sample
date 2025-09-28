@@ -1,0 +1,100 @@
+{
+  "name": "PL",
+  "siteCode": "pl",
+  "currencyMark": "zł",
+  "currencyCode": "PLN",
+  "BC_Phone": {
+    "device": "Galaxy Z Fold7",
+    "color": "Czarny",
+    "storage": "512GB | 12 GB",
+    "sku": "SM-F966BZKCEUE"
+  },
+  "BC_Tablet": {
+    "device": "Galaxy Tab S10+",
+    "color": "Grafitowy",
+    "storage": "256GB",
+    "connectivity": "5G",
+    "sku": "SM-X820NZAREUE"
+  },
+  "BC_Watch": {
+    "device": "Galaxy Watch8",
+    "caseColor": "Silver",
+    "caseSize": "40mm",
+    "connectivity": "Bluetooth",
+    "sku": "SM-L320NZSAEUE"
+  },
+  "BC_Book": {
+    "device": "Galaxy Book5 Pro",
+    "os": "Windows 11 Home",
+    "color": "Grey",
+    "bookMemory": "16GB",
+    "bookStorage": "512GB",
+    "connectivity": "Wi-Fi",
+    "screen": "14",
+    "processor": "Intel® Core™ Ultra 7processor 256V",
+    "graphics": "Intel® Arc™ 140V GPU (8GB)",
+    "sku": "NP940XHA-KG1PL"
+  },
+  "PD_Bespoke": {
+    "Url": "https://www.samsung.com/pl/refrigerators/bespoke-refrigerators/rb7300-344l-white-rb34a7b5e12-ef/",
+    "SKU": "RB34A7B5E12/EF"
+  },
+  "PD_DM_Delivery": {
+    "Url": "https://www.samsung.com/pl/smartphones/galaxy-a/galaxy-a16-black-128gb-sm-a165fzkbeue/buy/",
+    "SKU": "SM-A165FZKBEUE"
+  },
+  "PD_DM_Pickup": {
+    "Url": "https://www.samsung.com/pl/smartphones/galaxy-a/galaxy-a16-black-128gb-sm-a165fzkbeue/buy/",
+    "SKU": "SM-A165FZKBEUE"
+  },
+  "PD_DM_PickupRecycling": {
+    "Url": "",
+    "SKU": ""
+  },
+  "PD_HA1": {
+    "Url": "https://www.samsung.com/pl/washers-and-dryers/washing-machines/ww6400d-front-loading-smartthings-ai-energy-mode-a-10-percent-extra-energy-efficiency-9kg-white-ww90dg6u85lku4/",
+    "SKU": "WW90DG6U85LKU4",
+    "DeviceName": "Bespoke AI Front-Load Washing Machine Series 5 AI Energy 11KG",
+    "Color": "Black"
+  },
+  "PD_HA2": {
+    "Url": "https://www.samsung.com/pl/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-green-vs20c9542tn-ge/",
+    "SKU": "VS20C9542TN/GE"
+  },
+  "PD_IM1": {
+    "Url": "https://www.samsung.com/pl/smartphones/galaxy-a/galaxy-a16-black-128gb-sm-a165fzkbeue/buy/",
+    "SKU": "SM-A165FZKBEUE",
+    "DeviceName": "Galaxy A16",
+    "Color": "black",
+    "Storage": "128 GB",
+    "PFUrl": "https://www.samsung.com/pl/smartphones/galaxy-a/"
+  },
+  "PD_IT1": {
+    "Url": "https://www.samsung.com/pl/monitors/gaming/odyssey-oled-g9-49-inch-oled-dual-qhd-ls49dg950suxdu/",
+    "SKU": "LS49DG950SUXDU"
+  },
+  "PD_IT2": {
+    "Url": "https://www.samsung.com/pl/monitors/gaming/odyssey-oled-g6-g60sd-27-inch-360hz-oled-qhd-ls27dg600suxen/",
+    "SKU": "LS27DG600SUXEN"
+  },
+  "PD_VD1": {
+    "Url": "https://www.samsung.com/pl/lifestyle-tvs/the-frame/ls03d-75-inch-black-qe75ls03dauxxh/",
+    "SKU": "QE75LS03DAUXXH"
+  },
+  "PD_VD2": {
+    "Url": "https://www.samsung.com/pl/lifestyle-tvs/the-serif/ls01b-43-inch-the-serif-qled-4k-smart-tv-cloud-white-qe43ls01bguxxh/",
+    "SKU": "QE43LS01BGUXXH"
+  },
+  "PD_With_tradeUp": {
+    "Url": "https://www.samsung.com/pl/refrigerators/side-by-side/refrigerator-sbs-rs90f-aod-634l-black-doi-rs80f66kbfeu/",
+    "SKU": "RS80F66KBFEU"
+  },
+  "RewardSummary": {
+    "tieringMessage": "Zaloguj się aby zdobywać dodatkowe korzyści i punkty Samsung Rewards",
+    "rewardsbenefit": "Zyskaj punkty za to zamówienie(wyłącznie dla członków Samsung Rewards)",
+    "EstimatedRewardsPoints": "Zdobądź ([\\d\\.,\\s\\u202F]+) punkty Samsung Rewards za to zamówienie\\(wyłącznie dla członków Samsung Rewards\\)",
+    "EnrollRewards": "Sign up to Samsung Rewards to earn points and get access to exclusive benefits"
+  },
+  "TradeUpData": {},
+  "DeliveryCalendar": "Delivery Only"
+}

@@ -1,0 +1,79 @@
+{
+  "uk": {
+  "addresses": {
+    "titleCode": "Mr",
+    "firstName": "Sample", 
+    "lastName": "User",
+    "email": "sample.user@gmail.com",
+    "phone": "3213213312", 
+    "postalCode": "KT16 0PS",
+    "line1": "Samsung Electronics, Samsung House",
+    "town": "Chertsey"
+   },
+  "orders": {
+    "orderId": "UK240626-34921756",
+    "emailId": "sample.user@gmail.com"
+    }
+  },
+  "au": {
+    "addresses": {
+      "firstName": "Auto",
+      "lastName": "test", 
+      "phone": "0412376678",
+      "line1": "3 Murray Rose Ave",
+      "postalCode": "4000",
+      "town": "Brisbane",
+      "regionIso": "Queensland"
+  },
+  "orders": {
+    "orderId": "AU240909-39470040",
+    "emailId": "sample.user@gmail.com"
+    }
+  },
+  "sg": {
+    "addresses": {
+    "firstName": "Auto",
+    "lastName": "test", 
+    "line1": "1 Marina Bay Sands",
+    "line2": "Level 3",
+    "postcode": "018956",
+    "phone": "91234567"
+    },
+    "orders": {
+    "orderId": "SG250117-82381877",
+    "emailId": "sample.user@gmail.com"
+    }
+  },    
+  "fr": {
+    "addresses": {
+      "titleCode": "Mr",
+      "firstName": "Auto", 
+      "lastName": "test",
+      "telephonePrefix": "+33",
+      "telephoneInput": "612345678",
+      "postcode": "75008",
+      "line1": "Avenue des Champs Elysees"    
+  },
+  "orders": {
+    "orderId": "FR240730-40481774",
+    "emailId": "sample.user@gmail.com"
+    }
+  },
+  "jp": {
+    "addresses": {
+    "firstName": "Auto",
+    "lastName": "test",
+    "phone": "7036789000",
+    "email": "sample.user@gmail.com",
+    "postCode": "1060047",
+    "district": "東京都",
+    "townCity": "港区",
+    "line1": "any",
+    "suburb": "any"
+  },
+  "orders": {
+    "orderId": "JP240903-38893709",
+    "emailId": "sample.user@gmail.com"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "AU",
+  "siteCode": "au",
+  "currencyMark": "$",
+  "currencyCode": "AUD",
+  "BC_Phone": {
+    "device": "Galaxy Z Fold7",
+    "color": "Jetblack",
+    "storage": "512 GB｜12 GB",
+    "sku": "SM-F966BZKEATS",
+    "url": "https://www.samsung.com/au/smartphones/galaxy-z-fold7/buy/"
+  },
+  "BC_Tablet": {
+    "device": "Galaxy Tab S11",
+    "color": "Grey",
+    "storage": "256GB  12GB",
+    "connectivity": "Wi-Fi",
+    "sku": "SM-X730NZAEXSA"
+  },
+  "BC_Watch": {
+    "device": "Galaxy Watch7",
+    "caseColor": "Green",
+    "caseSize": "40mm",
+    "connectivity": "Bluetooth",
+    "sku": "SM-L300NZGAXSA"
+  },
+  "PD_IM1": {
+    "Url": "https://www.samsung.com/au/smartphones/galaxy-a/galaxy-a36-5g-awesome-lavender-128gb-sm-a366blvaats/buy/",
+    "SKU": "SM-A366BLVAATS",
+    "DeviceName": "Galaxy A36 5G",
+    "Color": "Awesome Lavender",
+    "Storage": "128 GB",
+    "PFUrl": "https://www.samsung.com/au/smartphones/galaxy-a/"
+  },
+  "PD_VD1": {
+    "Url": "https://www.samsung.com/au/tvs/qled-tv/qn1ef-85-inch-neo-qled-4k-vision-ai-smart-tv-qa85qn1efawxxy/",
+    "SKU": "QA85QN1EFAWXXY",
+    "PFUrl": "https://www.samsung.com/au/tvs/all-tvs/?trade-up"
+  },
+  "PD_HA1": {
+    "Url": "https://www.samsung.com/au/refrigerators/side-by-side/refrigerator-sbs-9-inch-ai-home-615l-black-doi-rs90f64d4fsa/",
+    "SKU": "RS90F64D4FSA",
+    "PFUrl": "https://www.samsung.com/au/refrigerators/all-refrigerators/"
+  },
+  "PD_IT1": {
+    "Url": "https://www.samsung.com/au/monitors/gaming/odyssey-oled-g6-g61sd-27-inch-240hz-qhd-ls27dg610sexxy/",
+    "SKU": "LS27DG610SEXXY",
+    "PFUrl": "https://www.samsung.com/au/monitors/all-monitors/"
+  },
+  "PD_Bespoke": {
+    "Url": "https://www.samsung.com/au/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-646l-clean-black-rf65db965322sa/",
+    "SKU": "RF65DB965322SA"
+  },
+  "PD_VD2": {
+    "Url": "https://www.samsung.com/au/tvs/qled-tv/qn85d-85-inch-neo-qled-4k-smart-tv-qa85qn85dbwxxy/",
+    "SKU": "QA85QN85DBWXXY"
+  },
+  "PD_HA2": {
+    "Url": "https://www.samsung.com/au/refrigerators/french-door/rf7000ac-srf7500bb-648l-black-rf59a7670b1-sa/",
+    "SKU": "RF59A7670B1/SA"
+  },
+  "PD_IT2": {
+    "Url": "https://www.samsung.com/au/monitors/gaming/odyssey-neo-g9-g95nc-57-inch-240hz-curved-dual-uhd-ls57cg952nexxy/",
+    "SKU": "LS57CG952NEXXY"
+  },
+  "PD_DM_Pickup": {
+    "Url": "https://www.samsung.com/au/tablets/galaxy-tab-a/galaxy-tab-a9-plus-wifi-graphite-128gb-sm-x210nzaexsa/buy/"
+  },
+  "PD_DM_Delivery": {
+    "Url": "https://www.samsung.com/au/refrigerators/bottom-mount-freezer/rb6000d-455l-black-doi-rb45dg6305b1sa/",
+    "SKU": "RB45DG6305B1SA"
+  },
+  "TradeUpData": {
+    "PostalCode": "5000"
+  },
+  "DeliveryCalendar": "Delivery and Basic Installation",
+  "RewardSummary": {
+    "SummaryTieringMessage": "Log in to earn Samsung Rewards points and get access to exclusive benefits.",
+    "SummaryRewardsBenefit": "Earn Rewards points on this order(Samsung Rewards members only)",
+    "SummaryRewardsEstimatedPoints": "Earn ([\\d\\.,]+) Samsung Rewards points\\(Samsung Rewards members only\\)",
+    "SummaryEnrollRewards": "You're currently signed in as:",
+    "RewardEarningPointRate": 10
+  },
+  "TradeInData": {
+    "Category": "Phone",
+    "Brand": "Samsung",
+    "Storage": "512",
+    "Model": "Galaxy Z Fold 4"
+  },
+  "TradeInData_Tablet": {
+    "Category": "Tablet",
+    "Brand": "Samsung",
+    "Device": "Galaxy Tab S8 Ultra 5G",
+    "Storage": "256"
+  },
+  "TradeInData_Watch": {
+    "Category": "Watch",
+    "Brand": "Samsung",
+    "Device": "Galaxy Watch 5 Bluetooth",
+    "ScreenSize": "44"
+  }
+}

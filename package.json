@@ -1,0 +1,29 @@
+{
+  "name": "e2e-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:report": "npx playwright show-report",
+    "test:headed": "npx playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.15",
+    "@types/node-fetch": "^2.6.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/mssql": "^9.1.7",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "mssql": "^11.0.1",
+    "p-limit": "^6.2.0",
+    "playwright-mcp": "^0.0.12"
+  }
+}
