@@ -12,7 +12,7 @@
 - **테스트 프레임워크**: Playwright
 - **언어**: TypeScript
 - **패턴**: Page Object Model (POM)
-- **리포팅**: HTML 리포트, 스크린샷, 비디오 녹화  
+- **리포팅**: HTML 리포트, Playwright Trace
   > ※ DB 내보내기 등 민감한 리포팅 항목은 보안상 Sample에서 제외하였습니다.
 
 ## 프로젝트 구조
@@ -20,13 +20,13 @@
 ```
 E2E-Automation_Sample/
 ├── tests/e2e/           # E2E 테스트 스펙 파일들
-│   ├── Prod_BC_01.spec.ts      # 장바구니 테스트
+│   ├── Prod_BC_01.spec.ts      # BC Page 기능 테스트
 │   ├── Prod_Cart_01.spec.ts    # 장바구니 기능 테스트
-│   ├── Prod_Checkout_01.spec.ts # 결제 프로세스 테스트
+│   ├── Prod_Checkout_01.spec.ts # Checkout 프로세스 테스트
 │   ├── Prod_Home_01.spec.ts    # 홈페이지 테스트
 │   ├── Prod_Login_01.spec.ts   # 로그인 테스트
 │   ├── Prod_MyAccount_01.spec.ts # 마이페이지 테스트
-│   ├── Prod_Payment_01.spec.ts # 결제 테스트
+│   ├── Prod_Payment_01.spec.ts # 결제 리스트 검증 테스트
 │   ├── Prod_PD_01.spec.ts      # 상품 상세 테스트
 │   ├── Prod_PF_01.spec.ts      # 상품 필터 테스트
 │   ├── Prod_Reward_01.spec.ts  # 리워드 테스트
