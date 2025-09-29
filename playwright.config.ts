@@ -61,9 +61,10 @@ const projects = files.map(file => {
 
   return {
     name: config.name || config.siteCode || file.replace('.json', ''),
-    use: { ...commonUse,
-          actionTimeout: 60000,  // 30초 → 60초로 증가
-          navigationTimeout: 60000,  // 네비게이션 타임아웃 추가},
+    use: {
+      ...commonUse,
+      actionTimeout: 60000,  // 30초 → 60초로 증가
+      navigationTimeout: 60000,  // 네비게이션 타임아웃 추가},
     },
     // testMatch: [
     //   `**/*_${siteCode.toUpperCase()}.spec.ts`,  // 1순위: _AU, _UK, _JP 등
@@ -99,8 +100,8 @@ export default defineConfig({
   projects,
   reporter: [
     ['list'],
-    ['html', { open: 'on-failure' }],
-    ['./database/reporter.ts']
+    ['html', { open: 'on-failure' }]
+    // ['./database/reporter.ts'] // Database reporter is not available
   ],
   use: {
     screenshot: {
