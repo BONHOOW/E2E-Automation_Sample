@@ -1,6 +1,6 @@
 import { test, expect } from '../../fixtures';
 
-test('Prod_Cart_01', { tag: '@Cart' }, async ({ page, common, pd, bc, cart, config, home, gnb}) => {
+test('Prod_Cart_01', { tag: '@Cart' }, async ({ page, common, pd, bc, cart, config, home, gnb }: any) => {
   console.log('Starting Prod_Cart_01 test...');
 
   try {
@@ -8,16 +8,16 @@ test('Prod_Cart_01', { tag: '@Cart' }, async ({ page, common, pd, bc, cart, conf
     await page.waitForLoadState('domcontentloaded');
 
     await common.cookieAcceptAll();
-    
+
     try {
       await pd.continueToCart();
     } catch (error) {
       const homeUrl = home.getHomeUrl(config.baseUrl, config.siteCode);
       await page.goto(homeUrl);
       await page.waitForLoadState('domcontentloaded');
-      
+
       await common.cookieAcceptAll();
-      
+
       // await gnb.hoverGnbCategory("Shop");
       // await gnb.clickGnbCatalog("shop", "Fold7");
 
@@ -25,12 +25,12 @@ test('Prod_Cart_01', { tag: '@Cart' }, async ({ page, common, pd, bc, cart, conf
 
       await bc.continueToCart();
     }
-    
+
     await cart.expectCartPageIsOpen();
     await cart.verifyPaymentListNotDisplayed();
-    
+
     console.log('Prod_Cart_01 test completed successfully!');
-    
+
   } catch (error: any) {
     console.error(`Prod_Cart_01 test failed: ${error.message}`);
     throw error;

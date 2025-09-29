@@ -7,7 +7,7 @@ import { test, expect } from '../../fixtures';
  * 2. Verify Shipping address – save/compare, count check, edit before/after, delete count check
  * 3. Verify Billing address – save/compare, count check, edit before/after, delete count check
  */
-test('Prod_MyAccount_01', { tag: '@MyAccount' }, async ({ page, config, myAccount, common, login, home, gnb }) => {
+test('Prod_MyAccount_01', { tag: '@MyAccount' }, async ({ page, config, myAccount, common, login, home, gnb }: any) => {
   console.log(`Starting Prod_MyAccount_01 test | Site Code: ${config.siteCode}`);
 
   const homeUrl = home.getHomeUrl(config.baseUrl, config.siteCode);
@@ -27,7 +27,7 @@ test('Prod_MyAccount_01', { tag: '@MyAccount' }, async ({ page, config, myAccoun
   await myAccount.cleanupAllAddresses();
 
   const newAddressData = config.myAccountData.addresses;
- 
+
   await myAccount.clickAddAddress();
   await myAccount.verifyAddressDialogIsOpen();
   await myAccount.fillAddressForm(newAddressData, config.siteCode);
@@ -41,7 +41,7 @@ test('Prod_MyAccount_01', { tag: '@MyAccount' }, async ({ page, config, myAccoun
     firstName: 'Updated',
     lastName: 'Delivery'
   };
-  
+
   await myAccount.fillAddressForm(editAddressData, config.siteCode);
   await myAccount.saveAddress();
 
@@ -76,7 +76,7 @@ test('Prod_MyAccount_01', { tag: '@MyAccount' }, async ({ page, config, myAccoun
     firstName: 'Updated',
     lastName: 'Billing'
   };
-  
+
   await myAccount.fillAddressForm(editBillingAddressData, config.siteCode);
   await myAccount.saveAddress();
 

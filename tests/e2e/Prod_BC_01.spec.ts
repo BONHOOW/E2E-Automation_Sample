@@ -1,6 +1,6 @@
 import { test, expect } from '../../fixtures';
 
-test('Prod_BC_01', { tag: ['@BC', '@TABLET'] }, async ({ page, config, bc, common, addon, cart, home, gnb, scp }) => {
+test('Prod_BC_01', { tag: ['@BC', '@TABLET'] }, async ({ page, config, bc, common, cart, home, gnb, scp }: any) => {
   console.log('🚀 Starting Prod_BC_01 test...');
 
   const { device, color, storage, sku } = config.BC_Tablet;
@@ -40,7 +40,7 @@ test('Prod_BC_01', { tag: ['@BC', '@TABLET'] }, async ({ page, config, bc, commo
   // Verify at least one option was added
   expect(tradeInAdded || scpAdded).toBeTruthy();
 
-  
+
   // Step 4: Test verifyPrice with device
   await bc.verifyPrice('device', device);
 

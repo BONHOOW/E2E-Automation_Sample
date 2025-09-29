@@ -1,6 +1,6 @@
 import { test, expect } from '../../fixtures';
 
-test('Prod_Search_01', { tag: '@SEARCH' }, async ({ page, config, home, common }) => {
+test('Prod_Search_01', { tag: '@SEARCH' }, async ({ page, config, home, common }: any) => {
   console.log('Starting Prod_Search_01 test');
 
   try {
@@ -20,9 +20,9 @@ test('Prod_Search_01', { tag: '@SEARCH' }, async ({ page, config, home, common }
     } else {
       throw new Error('Search results are not visible');
     }
-    
+
     console.log('Prod_Search_01 test completed successfully!');
-    
+
   } catch (error) {
     console.error(`Prod_Search_01 test failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
     throw error;

@@ -2,7 +2,7 @@ import { test, expect } from '../../fixtures';
 import { prod_Checkout_01_UK } from '../../pages/Checkout/SMN4/UK/commonCheckoutSteps_UK';
 import { prod_Checkout_01_AU } from '../../pages/Checkout/SMA/AU/commonCheckoutSteps_AU';
 
-test('Prod_Checkout_01', { tag: '@CHECKOUT' }, async ({ page, config, pd, addon, cart, common, checkout, utils }) => {
+test('Prod_Checkout_01', { tag: '@CHECKOUT' }, async ({ page, config, pd, addon, cart, common, checkout, utils }: any) => {
 
     console.log('🚀 starting checkout 01 test...');
 

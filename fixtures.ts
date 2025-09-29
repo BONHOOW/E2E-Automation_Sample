@@ -1,4 +1,4 @@
-import { test as base, TestInfo } from '@playwright/test';
+import { test as base, TestInfo, Page } from '@playwright/test';
 import { Home } from './pages/Home';
 import { LoginPage } from './pages/Login';
 import { BC } from './pages/BC';
@@ -19,9 +19,28 @@ import { SSFlex } from './pages/SSFlex';
 import { PF } from './pages/PF';
 import { SignUp } from './pages/SignUp';
 
+// Configuration type definition
+interface TestConfig {
+  baseUrl: string;
+  siteCode: string;
+  SSOID?: string;
+  SSOPW?: string;
+  SSOID_REWARD?: string;
+  SSOPW_REWARD?: string;
+  PD_IM1: { Url: string; SKU?: string; DeviceName?: string };
+  PD_Bespoke: { Url: string; SKU?: string; DeviceName?: string };
+  BC_Tablet: { device: string; color: string; storage: string; sku: string };
+  BC_Phone: { sku: string };
+  bcUrl: string;
+  myAccountData: any;
+  tradeInDevices: any[];
+  naTests?: string[];
+  [key: string]: any;
+}
+
 // Fixture type definitions
 type TestFixtures = {
-  config: any;
+  config: TestConfig;
   home: Home;
   login: LoginPage;
   bc: BC;
@@ -53,23 +72,27 @@ type TestFixtures = {
 // Custom fixtures definition
 export const test = base.extend<TestFixtures>({
   // Configuration data fixture
-  config: async ({ }, use: (config: any) => Promise<void>, testInfo: TestInfo) => {
+  config: async ({ }, use: (config: TestConfig) => Promise<void>, testInfo: TestInfo) => {
     const config = testInfo.project.metadata;
-    
-    // Add NA check logic
+
+    // NA check logic - skip tests that are not applicable for this site
     const testName = testInfo.title;
     const siteCode = config.siteCode;
-    
-    if (siteCode) {
+
+    if (siteCode && config.naTests) {
       const naTests = config.naTests || [];
       if (naTests.includes(testName)) {
-        // console.log(`NA Check: Test ${testName} (${siteCode}) will be marked as NA`);
-        // Mark test as skipped
-        test.skip(true, 'NA processing');
+        console.log(`⏭️  Skipping test ${testName} for ${siteCode} - marked as NA`);
+        test.skip(true, `Test not applicable for ${siteCode}`);
         return;
       }
     }
-    
+
+    // Validate required config properties
+    if (!config.baseUrl || !config.siteCode) {
+      throw new Error(`Missing required config properties: baseUrl=${config.baseUrl}, siteCode=${config.siteCode}`);
+    }
+
     await use(config);
   },
 
@@ -179,6 +202,16 @@ export const test = base.extend<TestFixtures>({
     const phone = devices.find((d: any) => d.type === 'phone');
     const watch = devices.find((d: any) => d.type === 'watch');
     const tablet = devices.find((d: any) => d.type === 'tablet');
+
+    // Log available trade-in devices for debugging
+    if (devices.length > 0) {
+      console.log(`📱 Trade-in devices available for ${siteCode}:`, {
+        total: devices.length,
+        phone: phone ? phone.name : 'None',
+        watch: watch ? watch.name : 'None',
+        tablet: tablet ? tablet.name : 'None'
+      });
+    }
 
     await use({
       siteCode,
